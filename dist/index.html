@@ -242,7 +242,7 @@
       </div>
     </section>
     <!-- Email -->
-    <section class="relative h-[300px]">
+    <section class="relative h-[300px] dark:bg-footerBgBlue">
       <div
         class="bg-gray-200 rounded-2xl px-8 py-10 text-center space-y-6 lg:w-[56rem] md:px-16 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 container dark:bg-mainBgBlue dark:text-white"
       >
@@ -264,5 +264,61 @@
         </form>
       </div>
     </section>
+    <!-- Footer -->
+    <footer class="bg-footerBgBlue text-white">
+      <div
+        class="container px-8 pb-16 space-y-24 text-xl flex flex-col md:flex-row md:justify-between md:items-center mx-auto md:px-2"
+      >
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <img class="w-6 h-6" src="images/icon-phone.svg" />
+            <p>09*********</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <img class="w-6 h-6" src="images/icon-email.svg" />
+            <p>Iliya.Ahadi@gmail.com</p>
+          </div>
+        </div>
+        <nav class="flex flex-col gap-14 md:flex-row">
+          <ul class="space-y-4">
+            <li><a class="hover:text-Cyan" href="#">About</a></li>
+            <li><a class="hover:text-Cyan" href="#">Jobs</a></li>
+            <li><a class="hover:text-Cyan" href="#">Press</a></li>
+            <li>
+              <a class="hover:text-Cyan" href="#">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="space-y-4">
+            <li>
+              <a class="hover:text-Cyan" href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="hover:text-Cyan" href="#">Terms</a>
+            </li>
+            <li>
+              <a class="hover:text-Cyan" href="#">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="flex justify-center gap-3">
+          <span
+            class="w-12 h-12 bg-testimonialsBgBlue hover:bg-Cyan rounded-full flex items-center justify-center group cursor-pointer"
+          >
+            <i class="fab fa-instagram fa-lg fa-fw group-hover:text-Blue"></i>
+          </span>
+          <span
+            class="w-12 h-12 bg-testimonialsBgBlue hover:bg-Cyan rounded-full flex items-center justify-center group cursor-pointer"
+          >
+            <i class="fab fa-telegram fa-lg fa-fw group-hover:text-Blue"></i>
+          </span>
+          <span
+            class="w-12 h-12 bg-testimonialsBgBlue hover:bg-Cyan rounded-full flex items-center justify-center group cursor-pointer"
+          >
+            <i class="fab fa-whatsapp fa-lg fa-fw group-hover:text-Blue"></i>
+          </span>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
