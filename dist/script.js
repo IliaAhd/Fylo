@@ -1,4 +1,4 @@
-// Element & Variables
+// Elements & Variables
 const html = document.documentElement.classList;
 
 const btnDarkMode = document.querySelector(".dark-mode");
