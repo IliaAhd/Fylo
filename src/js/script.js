@@ -16,11 +16,11 @@ btnDarkMode.addEventListener("click", () => {
   if (html.contains("dark")) {
     html.remove("dark");
     localStorage.theme = "light";
-    switchSvg("images/bg-curvy-mobile.svg");
+    switchSvg("./src/images/bg-curvy-mobile.svg");
   } else {
     html.add("dark");
     localStorage.theme = "dark";
-    switchSvg("images/bg-curvy-desktop.svg");
+    switchSvg("./src/images/bg-curvy-desktop.svg");
   }
 });
 
@@ -31,9 +31,9 @@ window.addEventListener("load", () => {
       window.matchMedia("(prefers-color-scheme: dark)").matches)
   ) {
     html.add("dark");
-    switchSvg("images/bg-curvy-desktop.svg");
+    switchSvg("./src/images/bg-curvy-desktop.svg");
   } else {
     html.remove("dark");
-    switchSvg("images/bg-curvy-mobile.svg");
+    switchSvg("./src/images/bg-curvy-mobile.svg");
   }
 });

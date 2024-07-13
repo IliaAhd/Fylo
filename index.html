@@ -25,10 +25,10 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./src/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script defer src="./src/js/script.js"></script>
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
@@ -55,13 +55,13 @@
       <nav class="flex items-center justify-center gap-8 mt-8 dar md:mt-0">
         <a
           class="hover:text-Cyan dark:hover:text-Cyan text-mainBgBlue dark:text-white"
-          href=""
+          href="#features"
         >
           Features
         </a>
         <a
           class="hover:text-Cyan dark:hover:text-Cyan text-mainBgBlue dark:text-white"
-          href=""
+          href="#testimonials"
         >
           Testimonials
         </a>
@@ -79,7 +79,7 @@
     <section class="dark:text-white relative">
       <!-- Hero Container -->
       <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
-        <img src="images/illustration-intro.png" alt="" class="mx-auto" />
+        <img src="./src/images/illustration-intro.png" alt="" class="mx-auto" />
         <h1
           class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl"
         >
@@ -96,17 +96,21 @@
       </div>
       <img
         class="absolute left-0 bottom-0 -z-10 svg mx-auto w-full"
-        src="images/bg-curvy-desktop.svg"
+        src="./src/images/bg-curvy-desktop.svg"
         alt=""
       />
     </section>
     <!-- Features -->
-    <section class="bg-gray-100 dark:bg-mainBgBlue pb-20">
+    <section class="bg-gray-100 dark:bg-mainBgBlue pb-20" id="features">
       <div
         class="container pt-20 px-8 flex flex-col md:flex-row justify-center items-center mx-auto space-y-20 md:space-y-0"
       >
         <div class="text-center max-w-md mx-auto">
-          <img class="mx-auto" src="images/icon-access-anywhere.svg" alt="" />
+          <img
+            class="mx-auto"
+            src="./src/images/icon-access-anywhere.svg"
+            alt=""
+          />
           <h3 class="dark:text-white font-bold text-xl mt-8">
             Access your file from anywhere
           </h3>
@@ -117,7 +121,7 @@
         </div>
 
         <div class="text-center max-w-md mx-auto">
-          <img class="mx-auto" src="images/icon-security.svg" alt="" />
+          <img class="mx-auto" src="./src/images/icon-security.svg" alt="" />
           <h3 class="dark:text-white font-bold text-xl mt-8">
             Security you can trust
           </h3>
@@ -132,7 +136,11 @@
         class="container pt-20 px-8 flex flex-col md:flex-row justify-center items-center mx-auto space-y-20 md:space-y-0"
       >
         <div class="text-center max-w-md mx-auto">
-          <img class="mx-auto" src="images/icon-collaboration.svg" alt="" />
+          <img
+            class="mx-auto"
+            src="./src/images/icon-collaboration.svg"
+            alt=""
+          />
           <h3 class="dark:text-white font-bold text-xl mt-8">
             Access your files from anywhere
           </h3>
@@ -143,7 +151,7 @@
         </div>
 
         <div class="text-center max-w-md mx-auto">
-          <img class="mx-auto" src="images/icon-any-file.svg" alt="" />
+          <img class="mx-auto" src="./src/images/icon-any-file.svg" alt="" />
           <h3 class="dark:text-white font-bold text-xl mt-8">
             Security you can trust
           </h3>
@@ -160,7 +168,7 @@
         class="container mx-auto py-16 p-10 flex flex-col md:flex-row md:justify-between md:items-center gap-16"
       >
         <div class="md:w-1/2">
-          <img src="images/illustration-stay-productive.png" alt="" />
+          <img src="./src/images/illustration-stay-productive.png" alt="" />
         </div>
         <div class="space-y-4 md:w-1/2 dark:text-white">
           <h3 class="text-xl font-bold md:text-4xl">
@@ -178,17 +186,17 @@
 
           <div class="border-b-[1px] border-b-Cyan inline-flex">
             <a class="text-Cyan" href="#">See how Fylo works</a>
-            <img class="w-5 h-5" src="images/icon-arrow.svg" alt="" />
+            <img class="w-5 h-5" src="./src/images/icon-arrow.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!-- Testimonials -->
-    <section class="bg-gray-50 dark:bg-introAndEmailBgBlue">
+    <section class="bg-gray-50 dark:bg-introAndEmailBgBlue" id="testimonials">
       <div
         class="pt-20 pb-80 px-8 flex flex-col gap-8 lg:px-4 lg:flex-row container mx-auto relative dark:text-white"
       >
-        <img class="absolute top-9 left-8" src="images/bg-quotes.png" />
+        <img class="absolute top-9 left-8" src="./src/images/bg-quotes.png" />
         <div
           class="bg-gray-100 rounded-xl p-10 text-sm space-y-6 max-w-xl mx-auto dark:bg-testimonialsBgBlue"
         >
@@ -198,7 +206,10 @@
             collaboration machine
           </p>
           <div class="flex items-center gap-4">
-            <img class="rounded-full w-10 h-10" src="images/profile-1.jpg" />
+            <img
+              class="rounded-full w-10 h-10"
+              src="./src/images/profile-1.jpg"
+            />
             <div>
               <h4 class="font-bold">Satish Patel</h4>
               <h5>Founder & CEO. Huddle</h5>
@@ -215,7 +226,10 @@
             collaboration machine
           </p>
           <div class="flex items-center gap-4">
-            <img class="rounded-full w-10 h-10" src="images/profile-2.jpg" />
+            <img
+              class="rounded-full w-10 h-10"
+              src="./src/images/profile-2.jpg"
+            />
             <div>
               <h4 class="font-bold">Bruce McKenzie</h4>
               <h5>Founder & CEO. Huddle 2</h5>
@@ -232,7 +246,10 @@
             collaboration machine
           </p>
           <div class="flex items-center gap-4">
-            <img class="rounded-full w-10 h-10" src="images/profile-3.jpg" />
+            <img
+              class="rounded-full w-10 h-10"
+              src="./src/images/profile-3.jpg"
+            />
             <div>
               <h4 class="font-bold">Eva Boyd</h4>
               <h5>Founder & CEO. Huddle 3</h5>
@@ -265,17 +282,17 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-footerBgBlue text-white">
+    <footer class="bg-footerBgBlue text-white py-8">
       <div
         class="container px-8 pb-16 space-y-24 text-xl flex flex-col md:flex-row md:justify-between md:items-center mx-auto md:px-2"
       >
         <div class="space-y-4">
           <div class="flex items-center gap-4">
-            <img class="w-6 h-6" src="images/icon-phone.svg" />
+            <img class="w-6 h-6" src="./src/images/icon-phone.svg" />
             <p>09*********</p>
           </div>
           <div class="flex items-center gap-4">
-            <img class="w-6 h-6" src="images/icon-email.svg" />
+            <img class="w-6 h-6" src="./src/images/icon-email.svg" />
             <p>Iliya.Ahadi@gmail.com</p>
           </div>
         </div>
